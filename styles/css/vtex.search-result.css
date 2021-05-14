@@ -1,0 +1,49 @@
+.galleryTitle--layout{
+    color: #DC1727;
+}
+.filterMessage{
+    display: none !important;
+}
+
+.filterTitle{
+    font-size: 18px;
+}
+
+
+.productCount{
+    position: relative;
+    float:right
+}
+
+.galleryItem--search-content--normal {
+    position: relative;
+      margin-bottom: 30px;
+  }
+  
+  .filters--layout {
+    padding-bottom: 50px;
+  }
+    
+  .buttonShowMore :global(.vtex-button) {
+    border-radius: 20px;
+  }
+  
+  .container--layout {
+    padding: 0 15px;
+    margin-bottom: 40px;
+    
+  }
+
+  .searchResultContainer{
+    background:  linear-gradient(white 20%, white 91%, #E6E6E6 91%);
+  }
+  
+  @media (max-width: 768px){
+    .filters--layout {
+      padding-bottom: 0px;
+    }
+  }
+
+  .buttonShowMore{
+      display: none !important;
+  }

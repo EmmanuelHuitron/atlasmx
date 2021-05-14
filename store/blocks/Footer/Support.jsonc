@@ -1,0 +1,52 @@
+{
+    "flex-layout.col#support": {
+        "children": [
+            "rich-text#support",
+            //"link#Sun-Perks",
+            "link#contact-us",
+            "link#returns",
+            "link#faqs",
+            "link#privacy"
+        ],
+        "props":{
+            "preventVerticalStretch": true,
+            "blockClass": "footer-links"
+        }
+    },
+    "rich-text#support": {
+        "props": {
+            "textAlignment": "left",
+            "textPosition": "left",
+            "text": "Support",
+            "font": "t-body",
+            "blockClass": "footer-title"
+        }
+    },
+    "link#contact-us": {
+        "props": {
+            "href": "/",
+            "label": "Contact us"
+        }
+    },
+    "link#returns": {
+        "props": {
+            "href": "",
+            "label": "Returns",
+            "target": "_blank"
+        }
+    },
+    "link#faqs": {
+        "props": {
+            "href": "/",
+            "label": "Frequeintly Asked Questions",
+            "target": "_blank"
+        }
+    },
+    "link#privacy": {
+        "props": {
+            "href": "/",
+            "label": "Privacy",
+            "target": "_blank"
+        }
+    }
+}

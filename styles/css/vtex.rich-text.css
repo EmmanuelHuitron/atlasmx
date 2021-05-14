@@ -1,0 +1,106 @@
+.wrapper--head-options, 
+.wrapper--head-store-locator,
+.wrapper--head-account{
+    margin:0 30px
+}
+.container--head-options :global(.vtex-rich-text-0-x-wrapper--head-options){
+    margin:0 15px;
+}
+.paragraph--head-options, .paragraph--head-store-locator, .paragraph--head-account{
+    cursor: pointer;
+    font-size: 14px;
+    white-space:nowrap;
+}
+
+.paragraph--head-store-locator{
+    padding: 0 30px;
+    white-space:nowrap;
+
+}
+.paragraph--head-store-locator::before{
+    content: url("/arquivos/store-loc.png");
+    top:5px;
+    left: -5px;
+    position: relative;
+    width: 100%;
+}
+
+.container--head-store-locator :global(.vtex-rich-text-0-x-wrapper--head-store-locator){
+    margin:0;
+}
+.container--footer-title,.wrapper--footer-title{
+    margin: 0;
+    padding: 0;
+    line-height: 0%;
+    text-decoration: none;
+}
+
+.link--footer-subtitle{
+    text-decoration: none;
+    color:#757575;
+    font-family: Arial;
+}
+
+.paragraph--footer-title{
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+.wrapper--footer-subtitle{
+    width: 100%;
+}
+
+.paragraph--avise-me{
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+}
+
+.container--avise-me{
+    max-width: 380px;
+}
+
+.paragraph--categories{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.36;
+    letter-spacing: 0;
+    color: #D60212;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+
+/* HOME MOBILE */
+@media (max-width:1080px){
+        .paragraph--avise-me{
+            margin: 16px auto;
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+        }
+        .wrapper--avise-me, .container--avise-me{
+            width: 100% !important;
+            text-align: center;
+            
+        }
+}
+
+
+
+/* PLP */
+
+.container--reccomended-products{
+    width: 90%;
+    margin: 10px auto;
+    color:#D60212;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph--reccomended-products{
+    width: 100%;
+}

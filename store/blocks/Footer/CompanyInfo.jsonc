@@ -1,0 +1,44 @@
+{
+    "flex-layout.col#company": {
+        "children": [
+            "rich-text#about-us",
+            //"link#Sun-Perks",
+            "link#careers",
+            "link#affiliates",
+            "link#blog"
+        ],
+        "props":{
+            "preventVerticalStretch": true,
+            "blockClass": "footer-links"
+        }
+    },
+    "rich-text#about-us": {
+        "props": {
+            "textAlignment": "left",
+            "textPosition": "left",
+            "text": "Company",
+            "font": "t-body",
+            "blockClass": "footer-title"
+        }
+    },
+    "link#careers": {
+        "props": {
+            "href": "/nuestra-historia",
+            "label": "Careers"
+        }
+    },
+    "link#affiliates": {
+        "props": {
+            "href": "",
+            "label": "Affiliates",
+            "target": "_blank"
+        }
+    },
+    "link#blog": {
+        "props": {
+            "href": "/",
+            "label": "Blog",
+            "target": "_blank"
+        }
+    }
+}

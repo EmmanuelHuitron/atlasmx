@@ -1,0 +1,368 @@
+{
+  "image#main-banner":{
+    "props": {
+      "src": "/arquivos/Banner-p.png",
+      "link":"",
+      "blockClass": "banner"
+    },
+    "title":"Main"
+},  
+  "image#second-banner":{
+        "props": {
+          "src": "/arquivos/Banner2-atlas.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#third-banner":{
+        "props": {
+          "src": "/arquivos/Banner3-atlas.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "slider-layout#payments": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "showNavigationArrows": "always",
+          "fullWidth":true,
+          "blockClass": "carousel-payments",
+          "arrowSize":12,
+          "showPaginationDots":"never",
+          "centerMode":"center"
+        },
+        "children": ["image#visa", "image#kueski", "image#mercado", "image#spei", "image#tienda", "image#paypal"]
+      },
+      "slider-layout#banners-mobile": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 0,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "never",
+          "fullWidth":true,
+          "blockClass": "carousel-payments-mobile",
+          "arrowSize":12,
+          "showPaginationDots":"never",
+          "centerMode":"center"
+        },
+        "children": ["image#second-banner",
+          "image#third-banner"]
+      },
+    "image#visa":{
+        "props": {
+          "src": "/arquivos/visa.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#kueski":{
+        "props": {
+          "src": "/arquivos/kueski.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#spei":{
+        "props": {
+          "src": "/arquivos/spei.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#mercado":{
+        "props": {
+          "src": "/arquivos/mercado.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#tienda":{
+        "props": {
+          "src": "/arquivos/tienda.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#paypal":{
+        "props": {
+          "src": "/arquivos/paypal.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#contact-mobile":{
+        "props": {
+          "src": "/arquivos/contact-mobile.png",
+          "link":"",
+          "blockClass": "main",
+          "fullWidth":true
+        },
+        "title":"Main"
+      },
+      "rich-text#avise-me":{
+        "props": {
+          "textAlignment": "left",
+          "textPosition": "center",
+          "text": "Entérate antes que nadie",
+          "font": "t-body",
+          "blockClass": "avise-me"
+      }
+    },
+    "image#category1":{
+        "props": {
+          "src": "/arquivos/Category.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#category2":{
+        "props": {
+          "src": "/arquivos/Category.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#category3":{
+        "props": {
+          "src": "/arquivos/Category.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#category4":{
+        "props": {
+          "src": "/arquivos/Category.png",
+          "link":"",
+          "blockClass": "banner"
+        },
+        "title":"Main"
+      },
+      "image#avise-me":{
+        "props": {
+          "src": "https://atlasmx.vteximg.com.br/arquivos/gato.png",
+          "maxHeight": 250 ,
+          "blockClass":"image-avise-me"
+        }
+      },
+      "info-card#category1":{
+        "props":{
+          "blockClass": "categories-home",
+          "imageUrl": "https://atlasmx.vteximg.com.br/arquivos/categories.png",
+          "callToActionMode": "link",
+          "headline": "Refrigeradores y Congeladores",
+          "callToActionUrl": "#",
+          "callToActionImageUrl": "#",
+          "textPosition": "left",
+          "textAlignment": "left"
+      }
+      },
+      "info-card#category2":{
+        "props":{
+          "blockClass": "categories-home",
+          "imageUrl": "https://atlasmx.vteximg.com.br/arquivos/categories.png",
+          "callToActionMode": "link",
+          "headline": "Refrigeradores y Congeladores",
+          "callToActionUrl": "#",
+          "callToActionImageUrl": "#",
+          "textPosition": "center",
+          "textAlignment": "left"
+      }
+      },
+      "info-card#category3":{
+        "props":{
+          "blockClass": "categories-home",
+          "imageUrl": "https://atlasmx.vteximg.com.br/arquivos/categories.png",
+          "callToActionMode": "link",
+          "headline": "Refrigeradores y Congeladores",
+          "callToActionUrl": "#",
+          "callToActionImageUrl": "#",
+          "textPosition": "center",
+          "textAlignment": "left"
+      }
+      },
+      "info-card#category4":{
+        "props":{
+          "blockClass": "categories-home",
+          "imageUrl": "https://atlasmx.vteximg.com.br/arquivos/categories.png",
+          "callToActionMode": "link",
+          "headline": "Refrigeradores y Congeladores",
+          "callToActionUrl": "#",
+          "callToActionImageUrl": "#",
+          "textPosition": "center",
+          "textAlignment": "left"
+      }
+      },
+      "rich-text#category-1":{
+        "props": {
+          "textAlignment": "left",
+          "textPosition": "center",
+          "text": "Home",
+          "font": "t-body",
+          "blockClass": "categories"
+      }
+    },
+      "rich-text#category-2":{
+        "props": {
+          "textAlignment": "left",
+          "textPosition": "center",
+          "text": "Home",
+          "font": "t-body",
+          "blockClass": "categories"
+      }
+    },
+      "rich-text#category-3":{
+        "props": {
+          "textAlignment": "left",
+          "textPosition": "center",
+          "text": "Home",
+          "font": "t-body",
+          "blockClass": "categories"
+      }
+    },
+    "rich-text#category-4":{
+      "props": {
+        "textAlignment": "left",
+        "textPosition": "center",
+        "text": "Home",
+        "font": "t-body",
+        "blockClass": "categories"
+    }
+  },
+
+    "slider-layout#shelf-home": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 5,
+          "tablet": 2,
+          "phone": 2
+        },
+        "hideUnavailableItems": false,
+        "showNavigationArrows": "always",
+        "showPaginationDots": "never",
+        "infinite": true,
+        "fullWidth": true,
+        "blockClass": "shelf",
+        "maxItems": 30,
+        "usePagination": true
+      }
+    },
+    "vtex.menu@2.x:menu#informativas": {
+      "props": {
+          "blockClass": "menu-informativas",
+          "orientation": "vertical",
+          "items": [
+              {
+                  "id": "menu-item-shop",
+                  "type": "custom",
+                  "iconId": null,
+                  "highlight": false,
+                  "itemProps": {
+                      "type": "internal",
+                      "href": "/Contactanos",
+                      "noFollow": false,
+                      "tagTitle": "trade",
+                      "text": "trade"
+                  }
+              },
+              {
+                  "id": "menu-item-about-us",
+                  "type": "custom",
+                  "iconId": null,
+                  "highlight": false,
+                  "itemProps": {
+                      "type": "internal",
+                      "href": "/la-gafa-perfecta",
+                      "noFollow": false,
+                      "tagTitle": "swim",
+                      "text": "swim"
+                  }
+              },
+              {
+                  "id": "menu-item-about-us",
+                  "type": "custom",
+                  "iconId": null,
+                  "highlight": false,
+                  "itemProps": {
+                      "type": "internal",
+                      "href": "/pagos-y-facturacion",
+                      "noFollow": false,
+                      "tagTitle": "plastic",
+                      "text": "plastic"
+                  }
+              },
+              {
+                  "id": "menu-item-about-us",
+                  "type": "custom",
+                  "iconId": null,
+                  "highlight": false,
+                  "itemProps": {
+                      "type": "internal",
+                      "href": "/account#/orders",
+                      "noFollow": false,
+                      "tagTitle": "weakness",
+                      "text": "weakness"
+                  }
+              },
+              {
+                  "id": "menu-item-about-us",
+                  "type": "custom",
+                  "iconId": null,
+                  "highlight": false,
+                  "itemProps": {
+                      "type": "internal",
+                      "href": "/envios-y-entregas",
+                      "noFollow": false,
+                      "tagTitle": "banner",
+                      "text": "banner"
+                  }
+              },
+              {
+                  "id": "menu-item-about-us",
+                  "type": "custom",
+                  "iconId": null,
+                  "highlight": false,
+                  "itemProps": {
+                      "type": "internal",
+                      "href": "/cambios-y-devoluciones",
+                      "noFollow": false,
+                      "tagTitle": "extinct",
+                      "text": "extinct"
+                  }
+              },
+              {
+                  "id": "menu-item-about-us",
+                  "type": "custom",
+                  "iconId": null,
+                  "highlight": false,
+                  "itemProps": {
+                      "type": "internal",
+                      "href": "/preguntas-frecuentes",
+                      "noFollow": false,
+                      "tagTitle": "flow",
+                      "text": "flow"
+                  }
+              }
+          ]
+      }
+  }
+
+}

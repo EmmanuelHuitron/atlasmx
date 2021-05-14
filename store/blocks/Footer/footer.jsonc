@@ -1,0 +1,261 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#main-footer",
+      "flex-layout.row#main-footer-bottom"/*,
+      "flex-layout.row#footer-top",
+      "flex-layout.row#footer-bottom"*/
+    ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#main-footer-mobile",
+      "flex-layout.row#main-footer-mobile2",
+      "flex-layout.row#main-footer-bottom"
+    ]
+  },
+  "flex-layout.row#main-footer":{
+    "children":[
+        "flex-layout.col#main-footer"
+    ],
+    "props":{
+      "blockClass":"main-footer"
+    }
+  },
+  "flex-layout.col#main-footer":{
+    "children":[
+        "flex-layout.row#footer-top"
+    ],
+    "props":{
+      "blockClass":"main-footer",
+      "horizontalAlign":"center",
+      "verticalAlign":"center"
+    }
+  },
+  "flex-layout.row#main-footer-bottom":{
+    "children":[
+        "flex-layout.col#main-footer-bottom"
+    ],
+    "props":{
+      "blockClass":"main-footer-bottom"
+    }
+  },
+  "flex-layout.col#main-footer-bottom":{
+    "children":[
+      "flex-layout.row#footer-bottom"
+    ],
+    "props":{
+      "blockClass":"main-footer-bottom"
+    }
+  },
+  "flex-layout.row#footer-top": { 
+    "children": [
+      "flex-layout.col#footer-left",
+      "flex-layout.col#footer-right"
+    ],
+    "props":{
+      "horizontalAlign":"center",
+      "verticalAlign":"center",
+      "blockClass":"footer-top"
+    }
+  },
+  "flex-layout.col#footer-left":{
+    "children":[
+      "flex-layout.row#footer-left-top",
+      "flex-layout.row#footer-left-bottom"
+    ],
+    "props":{
+      "blockClass":"footer-top-side"
+    }
+  },
+  
+  "flex-layout.row#footer-left-top":{
+    "children":[
+      "flex-layout.col#company",
+      "flex-layout.col#support",
+      "flex-layout.col#company"
+    ]
+  },
+  "flex-layout.row#footer-left-bottom":{
+    "children":[
+      "flex-layout.col#shop",
+      "flex-layout.col#spacer",
+      "flex-layout.col#company"
+    ],
+    "props":{
+      "blockClass":"footer-bottom-side"
+    }
+  },
+  "flex-layout.col#footer-right":{
+    "children":[
+      "flex-layout.row#footer-contact",
+      "flex-layout.row#footer-social-media",
+      "flex-layout.row#newsletter"
+    ],
+    "props":{
+      "blockClass":"footer-top-side"
+    }
+  },
+  "flex-layout.row#footer-contact":{
+    "children":[
+      "rich-text#contacto",
+      "rich-text#mail"
+    ],
+    "props":{
+      "blockClass":"footer-contact"
+    }
+  },
+  "flex-layout.row#footer-social-media":{
+    "children":[
+      "rich-text#social-media",
+      "image#social-media"
+    ],
+    "props":{
+      "blockClass":"footer-social-media"
+    }
+  },
+  "flex-layout.row#newsletter":{
+    "children":[
+      /*"rich-text#subscribe",*/
+      "newsletter#footer"/*,
+      "image#input"*/
+    ]
+  },
+  "rich-text#contacto":{
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Estamos en contacto:",
+      "font": "t-body",
+      "blockClass": "footer-title"
+  }
+
+  },
+  "rich-text#mail":{
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "quejas-sujerencias@tiendaatlas.mx",
+      "font": "t-body",
+      "blockClass": "footer-subtitle"
+  }
+
+  },
+  "rich-text#social-media":{
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Síguenos",
+      "font": "t-body",
+      "blockClass": "footer-title"
+    }
+  },
+  "image#social-media": {
+    "props": {
+      "width": 262,
+      "src": "https://atlasmx.vteximg.com.br/arquivos/social-media.png"
+    }
+  },
+  "rich-text#subscribe":{
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "SUSCRÍBETE",
+      "font": "t-body",
+      "blockClass": "footer-title"
+    }
+  },
+
+
+  "flex-layout.row#footer-bottom":{
+    "children":[
+      "flex-layout.row#footer-rights",
+      "flex-layout.row#footer-payments"
+    ],
+    "props":{
+      "blockClass":"footer-bottom",
+      "maxWidth":1400
+    }
+  },
+  "flex-layout.row#footer-rights":{
+    "children":["rich-text#rights"],
+    "props":{
+      "blockClass":"footer-bottom-side"
+    }
+  },
+  "flex-layout.row#footer-payments":{
+    "children":["image#payments"],
+    "props":{
+      "blockClass":"footer-bottom-side"
+    }
+  },
+  "rich-text#rights":{
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Copyright © 2021 Atlas.com  All rights reserved.",
+      "font": "t-body",
+      "blockClass": "footer-subtitle"
+  }
+    
+  },
+  "image#payments": {
+    "props": {
+        "src": "/arquivos/footer-payments-v3.png",
+        "maxHeight": 29
+    }
+},
+
+  "image": {
+    "props": {
+      "width": 100,
+      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+    }
+  },
+
+
+  "flex-layout.row#main-footer-mobile":{
+    "children":[
+      "flex-layout.col#company",
+      "flex-layout.col#shop",
+      "flex-layout.col#support",
+      "flex-layout.col#company",
+      "flex-layout.col#company"
+  ],
+  "props":{
+    "blockClass":"main-footer-mobile",
+    "rowGap":"1",
+    "preserveLayoutOnMobile": true
+  }
+  },
+  "flex-layout.row#main-footer-mobile2":{
+    "children":[
+      "flex-layout.col#footer-mobile2"
+  ],
+  "props":{
+    "blockClass":"main-footer",
+    "rowGap":"1",
+    "preventVerticalStretch":true,
+    "preserveLayoutOnMobile": true
+  }
+  },
+  "flex-layout.col#footer-mobile2":{
+    "children":[
+      "flex-layout.row#footer-social-media",
+      "flex-layout.row#newsletter"
+    ],
+    "props":{"blockClass":"footer-mobile2"}
+  },
+
+  
+  "newsletter#footer":{
+      "props":{
+        "label":"Suscríbete",
+        "placeholder":" ",
+        "blockClass":"newsletter-footer"
+      }
+  }
+}

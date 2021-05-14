@@ -1,0 +1,60 @@
+{
+    "flex-layout.col#shop": {
+        "children": [
+            "rich-text#shop",
+            //"link#Sun-Perks",
+            "link#new-arrivals",
+            "link#accessories",
+            "link#men",
+            "link#women",
+            "link#shop-all"
+        ],
+        "props":{
+            "preventVerticalStretch": true,
+            "blockClass": "footer-links"
+        }
+    },
+    "rich-text#shop": {
+        "props": {
+            "textAlignment": "left",
+            "textPosition": "left",
+            "text": "Shop",
+            "font": "t-body",
+            "blockClass": "footer-title"
+        }
+    },
+    "link#new-arrivals": {
+        "props": {
+            "href": "/nuestra-",
+            "label": "New Arrivals"
+        }
+    },
+    "link#accessories": {
+        "props": {
+            "href": "",
+            "label": "Accessories",
+            "target": "_blank"
+        }
+    },
+    "link#men": {
+        "props": {
+            "href": "/",
+            "label": "Men",
+            "target": "_blank"
+        }
+    },
+    "link#women": {
+        "props": {
+            "href": "",
+            "label": "Women",
+            "target": "_blank"
+        }
+    },
+    "link#shop-all": {
+        "props": {
+            "href": "/",
+            "label": "Shop All",
+            "target": "_blank"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.container--tab-pdp{
+    padding: 16px;
+}
+
+.listContainer{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(0 0 0 / 20%);
+    margin-bottom: 16px;
+}

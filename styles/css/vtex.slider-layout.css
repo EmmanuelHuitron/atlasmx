@@ -1,0 +1,50 @@
+.sliderTrackContainer--carousel-payments{
+    max-width: 1000px;
+    min-width: 500px;
+    padding:20px
+}
+.sliderTrackContainer--carousel-payments{
+    margin:0 50px;
+}
+.slideChildrenContainer--carousel-payments{
+    border-left:0.5px solid #D2D2D2;
+    padding: 0 10px;
+}
+.sliderLeftArrow--carousel-payments, .sliderLeftArrow--shelf{
+    margin-right: 20px;
+}
+.sliderRightArrow--carousel-payments, .sliderRightArrow--shelf{
+    margin-left: 20px;
+}
+.caretIcon--carousel-payments, .caretIcon--shelf{
+    background-color: #615e5eb2;
+    color: white;
+    padding:14px 8px;
+    border-radius: 5px;
+}
+.sliderTrackContainer--carousel-brands{
+    margin:40px 0;
+}
+
+
+@media (max-width:1080px){
+    .sliderLayoutContainer--carousel-payments{
+        overflow-x: hidden;
+        width: 90%;
+    }
+    .sliderTrackContainer--carousel-payments{
+        min-width: 250px;
+        float: left;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    .sliderLayoutContainer--carousel-payments-mobile{
+        display: none;
+    }
+}
+
+
+
+/*----------------------PDP--------------------*/

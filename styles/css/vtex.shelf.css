@@ -1,0 +1,53 @@
+.title--home, .title--categories-home{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.36;
+    letter-spacing: 0;
+    color: #D60212;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+
+.sliderContainer--home{
+    max-width: 100%;
+}
+
+.slide--home, .slide--categories-home{
+    height: auto;
+    margin: 10px;
+}
+
+
+.caretIcon--home{
+    display: block;
+}
+@media (min-width:1024px){
+
+    .sliderContainer--home :global(.vtex-slider-0-x-sliderFrame){
+        flex-flow: row wrap;
+    }
+    .slide--home, .slide--categories-home{
+        width: 20.6% !important;
+        height: auto;
+    }
+    .sliderContainer--home :global(.vtex-slider-0-x-dotsContainer){
+        display: none;
+    }
+}
+
+
+
+/*------------------PDP---------------------*/
+.slide--related-products{
+    max-width: 95%;
+    margin: 0 10px;
+}
+
+.title--related-products{
+    font-size: 24px;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    color: black;
+}

@@ -1,0 +1,379 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#top-header",
+      "sticky-layout#desktop"
+    ]
+  },
+  "flex-layout.row#top-header":{
+    "props":{
+      "horizontalAlign":"center",
+      "verticalAlign":"center",
+      "blockClass":["top-header"]
+    },
+    "children":[
+      "flex-layout.col#top-header"
+    ]
+  },
+  "flex-layout.col#top-header":{
+    "props":{
+      "horizontalAlign":"center",
+      "verticalAlign":"center",
+      "blockClass":"col-top-header"
+    },
+    "children":[
+      "flex-layout.row#red-band",
+      "flex-layout.row#header-search"
+    ]
+  },
+  "flex-layout.row#red-band":{
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass":"red-band"
+    },
+    "children":[
+      "flex-layout.col#spacer",
+      "flex-layout.row#header-options",
+      "flex-layout.col#spacer",
+      "flex-layout.col#stores",
+      "flex-layout.col#my-account",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.row#header-options":{
+    "props":{
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "width":"80%",
+      "blockClass":"header-options"
+    },
+    "children":[
+      "rich-text#opt1",
+      "rich-text#opt2",
+      "rich-text#opt3",
+      "rich-text#opt4",
+      "rich-text#opt5"
+    ]
+  },
+  "flex-layout.col#stores":{
+    "props":{
+      "horizontalAlign":"center",
+      "verticalAlign":"center",
+      "blockClass":"stores"
+    },
+    "children":[
+      "rich-text#store-locator"
+    ]
+  },
+  "flex-layout.col#my-account":{
+    "props":{
+      "horizontalAlign":"center",
+      "verticalAlign":"center",
+      "blockClass":"my-account"
+    },
+    "children":[
+      "rich-text#my-account"
+    ]
+  },
+  "rich-text#opt1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "motorist",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "head-options"
+    }
+  },
+  "rich-text#opt2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Blade",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "head-options"
+    }
+  },
+  "rich-text#opt3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "intermediate stride",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "head-options"
+    }
+  },
+  "rich-text#opt4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "funny",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "head-options"
+    }
+  },
+  "rich-text#opt5": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "gate",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "head-options"
+    }
+  },
+  "rich-text#store-locator": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Sucursales",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "head-store-locator"
+    }
+  },
+  "rich-text#my-account": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Mi cuenta",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "head-account"
+    }
+  },
+  "flex-layout.row#header-search":{
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass":"header-search"
+    },
+    "children":[
+      "drawer",
+      /*"flex-layout.col#hamburguer",*/
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-bar",
+      "flex-layout.col#spacer",
+      "flex-layout.col#mini-banner"
+    ]
+  },
+
+  "flex-layout.col#hamburguer":{
+    "props":{
+      "width":"auto",
+      "horizontalAlign":"right",
+      "verticalAlign":"middle",
+      "blockClass":"hamburguer-desktop"
+    },
+    "children":[
+      "logo#hamburguer"
+    ]
+  },
+
+  "logo#hamburguer":{
+    "props":{
+      "tittle":"Banner",
+      "href":"/",
+      "url":"https://atlasmx.vteximg.com.br/arquivos/hamburguer.png",
+      "width":"22"
+    }
+
+  },
+
+  "flex-layout.col#search-bar":{
+    "props":{
+      "width":"grow",
+      "horizontalAlign":"right",
+      "blockClass":"searchBarHeaderContainer"
+    },
+    "children":[
+      "search-bar#header"
+    ]
+
+  },
+  "search-bar#header": {
+    "props":{
+        "placeholder": "Busca tu producto",
+        "blockClass": "search-Desktop",
+        "openAutocompleteOnFocus": true,
+        "displayMode": "search-button"
+    }
+},
+  "flex-layout.col#mini-banner":{
+    "props":{
+      "verticalAlign":"middle"
+    },
+    "children":[
+      "logo#miniBanner"
+    ]
+  },
+  "logo#miniBanner":{
+    "props":{
+      "tittle":"Banner",
+      "href":"/",
+      "url":"https://atlasmx.vteximg.com.br/arquivos/miniBanner.png",
+      "width":"235"
+    }
+  },
+
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#sticky-desktop"]
+  },
+  "flex-layout.row#sticky-desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "maxHeight":64,
+      "blockClass":"main-header"
+    },
+    "children": [
+      "flex-layout.col#spacer",
+      /*"flex-layout.col#hamburguer",*/
+      "drawer#sticky",
+      "flex-layout.col#logo-sticky",
+      "flex-layout.row#header-options",
+      "flex-layout.col#miniBanner",
+      "flex-layout.col#contactHeader",
+      "flex-layout.col#stores",
+      "flex-layout.col#my-account",
+      "minicart.v2",
+      "flex-layout.col#spacer"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://atlasmx.vteximg.com.br/arquivos/logo.png",
+      "width": "87"
+    }
+  },
+  "flex-layout.col#logo-sticky": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#sticky"]
+  },
+  "logo#sticky": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://atlasmx.vteximg.com.br/arquivos/logo_atlas_bco.png?v=637129925992300000",
+      "width": "87"
+    }
+  },
+
+  "flex-layout.col#miniBanner":{
+    "props":{
+      "width":"auto",
+      "horizontalAlign":"right",
+      "verticalAlign":"middle",
+      "blockClass":"image-header"
+    },
+    "children":[
+      "image#miniBanner"
+    ]
+  },
+  "image#miniBanner": {
+    "props": {
+      "src": "https://atlasmx.vteximg.com.br/arquivos/miniBanner-sticky.png",
+      "maxHeight": 60 ,
+      "blockClass":"image-header"
+    }
+  },
+
+  "flex-layout.col#contactHeader":{
+    "props":{
+      "width":"auto",
+      "horizontalAlign":"right",
+      "verticalAlign":"middle",
+      "blockClass":"image-header"
+    },
+    "children":[
+      "image#contactHeader"
+    ]
+  },
+  "image#contactHeader": {
+    "props": {
+      "src": "https://atlasmx.vteximg.com.br/arquivos/contact-header.png",
+      "maxHeight": 60,
+      "blockClass":"image-header"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": ["flex-layout.row#mobile","flex-layout.row#mobile-bottom"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"
+    ]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "flex-layout.col#stores",
+      "logo#sticky",
+      "flex-layout.col#spacer",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#mobile-bottom": {
+    "children": [
+      "flex-layout.col#search-bar"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": []
+  },
+  "drawer#sticky":{
+    "props":{ "blockClass":"drawer-sticky"}
+  }
+}

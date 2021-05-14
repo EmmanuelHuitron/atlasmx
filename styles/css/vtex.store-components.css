@@ -1,0 +1,221 @@
+.container--top-header, .container{
+    width: 100% !important;
+}
+
+.searchBarContainer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+    color: #b0b0b0;
+    padding: 0px 0px 0px 6px;
+    height: 44px;
+    background: #DC1727;
+    width: 79px;
+   
+    border-radius: 4px;
+  }
+
+  .searchBarIcon--search{
+      color:white;
+      position: relative;
+      left: 20px;
+      top: -3px;
+  }
+
+.searchBarContainer :global(.vtex-input-prefix__group){
+    background-color: white;
+    border-radius: 10px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group):focus{
+    outline:none  !important;
+    outline-width: 0 !important;
+}
+.searchBarContainer .span{
+    background-color: red;
+}
+
+.imageElement--image-header{
+    height: 100% !important;
+    width: auto;
+}
+/* --------------------- FOOTER -----------------------*/
+.buttonContainer--newsletter-footer :global(.vtex-button){
+    background-color: #DC1727;
+    color: white;
+}
+
+.inputGroup--newsletter-footer{
+    width: 100%;
+}
+.buttonContainer--newsletter-footer, .buttonContainer--newsletter-home{
+    padding-left: 0;
+}
+
+.form--newsletter-footer{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.label--newsletter-footer{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #757575;
+    text-transform: uppercase;
+}
+
+.container--newsletter-footer{
+    min-width: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+}
+
+.container--newsletter-footer :global(.vtex-store-components-3-x-form--newsletter-footer){
+    margin-left: 0;
+    width: 100%;
+}
+
+
+
+/*mobile*/
+@media(max-width:1080px){
+    .form--newsletter-footer{
+        display: flex;
+    }
+    .inputGroup--newsletter-footer{
+        width: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    .inputGroup--newsletter-footer :global(.vtex-input){
+        width: 60%;
+    }
+
+    .buttonContainer--newsletter-footer, .buttonContainer--newsletter-home{
+        padding: 0px;
+    }
+
+}
+
+/* --------------------- // FOOTER //-------------------*/
+
+/* --------------------- HOME DESKTOP  -----------------*/
+
+.imageElement--banner{
+    padding:4px;
+    width: 100%;
+}
+
+.discountInsideContainer {
+    border-radius: 10px;
+    float: left;
+}
+
+.label--newsletter-home{
+    font-size: 11px;
+    color:white;
+    font-weight: light;
+}
+
+.newsletter--newsletter-home{
+    width: 60%;
+}
+
+.imageElement--image-avise-me{
+    width: 100%;
+    height: auto;
+}
+
+.buttonContainer--newsletter-home :global(.vtex-button){
+    background-color: black;
+    color: white;
+}
+
+.infoCardHeadline--categories-home{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:0px;
+    width: 100%;
+}
+
+.infoCardCallActionContainer--categories-home{
+    display:none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.infoCardContainer--categories-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column-reverse;
+    padding: 50px 0px;
+    width:100% !important;
+    background-color: rgba(1,1,1, 0);
+}
+
+.infoCardContainer--categories-home :global(.vtex-store-components-3-x-infoCardImageContainer),
+ .infoCardContainer--categories-home :global(.vtex-store-components-3-x-infoCardTextContainer){
+    width: 100%;
+}
+.infoCardImage--categories-home{
+    display: block;
+    width: 100% !important;
+}
+/* --------------------- // HOME DESKTOP // -----------------*/
+
+
+/* --------------------- HOME MOBILE  -----------------*/
+@media (max-width:1024px){
+.imageElement--main{
+    width: 90%;
+}
+
+.imageElement--image-avise-me{
+    max-height: 180px;
+}
+
+.imageElement--banner{
+    width: auto;
+    min-width: 70px;
+    min-height: 40px;
+}
+
+.container--newsletter-home{
+    padding:8px !important;
+}
+}
+/* ---------------------// HOME MOBILE  //-----------------*/
+
+
+/*----------PDP------------*/
+.content{
+    white-space: break-spaces;
+}
+
+.swiper-pagination{
+    display: none;
+}
+
+.productNameContainer{
+    margin-bottom:16px
+}
+
+.price_sellingPrice--pdp{
+    color:#DC1727
+}
+
+.price_className--pdp{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}

@@ -1,0 +1,25 @@
+.sliderFrame{
+    max-width: 1800px;
+}
+
+
+.slideChildrenContainer--shelf{
+    margin: 50px;
+    padding:50px
+    
+}
+
+@media(max-width:1080px){
+    .slideChildrenContainer--carousel-payments{
+        margin: 5px;
+        padding:5px
+        
+    }
+    
+}
+
+
+/*------------PDP------------*/
+.dotsContainer{
+    display: none
+}

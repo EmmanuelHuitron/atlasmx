@@ -1,0 +1,178 @@
+.container {
+
+  border: 0.1px solid #70707085;
+}
+  .container:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+  }
+  .productNameContainer {
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  .containerNormal--search-items{
+      width: 80%;
+  }
+ .element--search-items, .clearLink--search-items,.container--search-items{
+   width: 100%  !important;
+ }
+
+  .element--search-items :global(.vtex-product-summary-2-x-buyButtonContainer) {
+    bottom: 0;
+  }
+  .productBrand {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .productNameContainer {
+    height: 36px;
+  }
+
+  .nameContainer {
+    padding-bottom: 0px;
+  }
+  .element {
+    padding-top: 20px;
+  }
+
+  .container--search-items {
+    width: 90% !important;
+    max-width: 100%;
+    background-color: white;
+    min-width: 90%;
+    border-radius: 0px;
+    position: relative;
+    padding: 10px;
+    margin: 0;
+}
+
+
+  .buyButton{
+    border-radius: 20px;
+    width: 90%;
+    max-width: 250px;
+    margin-bottom: 0;
+    background-color: red;
+  }
+
+  .buyButton :global(.vtex-button){
+    border-radius: 5px;
+    background-color: red;
+  }
+
+  .buyButton :global(.vtex-button__label){
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: red;
+  }
+
+  .clearLink--compareContainer:hover
+    :global(.vtex-store-link-0-x-link--viewMore-related) {
+    display: flex;
+  }
+.container--mas-vendidos{
+    border: 0.5px solid #5C5C5C;
+    border-radius: 0px;
+}
+.element--search-items :global(.vtex-product-summary-2-x-buyButtonContainer) {
+    bottom: 0;
+  }
+
+.container--mas-vendidos{
+    border: 0.5px solid #5C5C5C;
+    border-radius: 0px;
+}
+
+.discountContainer{
+    justify-content: flex-start;
+    float: left;
+    position: relative;
+    display: flex;
+    flex-flow:row-reverse;
+}
+
+.imageContainer :global(.vtex-store-components-3-x-discountContainer){
+    display: flex;
+    justify-content: center;
+    flex-flow:row-reverse;
+}
+
+
+
+/*PLP*/
+.element--search-items :global(.vtex-product-summary-2-x-buyButtonContainer) {
+  bottom: 0;
+}
+
+.container--mas-vendidos{
+  border: 0.5px solid #5C5C5C;
+  border-radius: 0px;
+}
+
+.imageContainer {
+min-height: 285px;
+}
+
+:global(.vtex-product-price-1-x-currencyContainer--summary) {
+font-size: 20px;
+}
+
+.element {
+padding-bottom: 55px;
+position: relative;
+}
+
+
+
+.buyButtonContainer {
+max-width: unset;
+}
+
+@media screen and (min-width: 784px) {
+.buyButton {
+  max-width: 200px;
+}
+}
+
+@media screen and (max-width: 639px) {
+.buyButton :global(.vtex-button){
+  width: 90%;
+}
+
+.buyButton :global(.vtex-button__label){
+  font-size: 14px;
+  padding: 0 !important;
+}
+
+.priceContainer {
+  padding: 0;
+}
+
+.nameContainer {
+  padding-top: 10px;
+}
+
+.imageContainer {
+  align-items: center;
+  display: flex;
+  min-height: 150px;
+}
+}
+
+/*----------------- PDP -----------------*/
+.imageContainer--imgHome, .imageWrapper--imgHome, .imageContainer{
+  min-height: 100px;
+}
+
+.element--search-items,.containerNormal--search-items, .element--compareContainer{
+ padding-bottom: 10px;
+}
+.price_sellingPrice--priceRelated{
+  font-size: 18px;
+}
+.priceContainer--priceRelated{
+  padding:0px;
+  text-align: left;
+}
